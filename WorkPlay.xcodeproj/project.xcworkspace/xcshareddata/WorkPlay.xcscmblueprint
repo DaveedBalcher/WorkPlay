@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7C075A41E7A29292FFCDD58BAAC3BEBEECCB05B9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7C075A41E7A29292FFCDD58BAAC3BEBEECCB05B9" : 0,
+    "E28BE05AC21056BF7BCACA2728053545A9C63959" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0179D9D4-5947-42C4-A202-6FFDB3C55E98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7C075A41E7A29292FFCDD58BAAC3BEBEECCB05B9" : "WorkPlay\/",
+    "E28BE05AC21056BF7BCACA2728053545A9C63959" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WorkPlay",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WorkPlay.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DavidBalcher\/WorkPlay.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C075A41E7A29292FFCDD58BAAC3BEBEECCB05B9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DavidBalcher\/LiptonForPA-PayPal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E28BE05AC21056BF7BCACA2728053545A9C63959"
+    }
+  ]
+}

@@ -68,6 +68,7 @@ class MainTVC: UITableViewController, GlobalClockDelegate {
                 }
                     sender.enabled = true
                     self.tasks[self.selectedTask].taskMode = sender.toggleMode()
+                    self.tableView.reloadData()
             }
             actionSheetController.addAction(feedbackAction)
         }
@@ -82,16 +83,14 @@ class MainTVC: UITableViewController, GlobalClockDelegate {
     
     // Mark: - Pause Task While in Play Mode
     
-    //    @IBOutlet weak var pauseButton: UIButton!
-    //
-    //    @IBAction func pausePlayTime() {
-    //        let didAddTask = timer.toggle(self)
-    //        if didAddTask {
-    //            pauseButton.setTitle("Pause", forState: .Normal)
-    //        } else {
-    //            pauseButton.setTitle("Play", forState: .Normal)
-    //        }
-    //    }
+    @IBAction func pausePlayTime(sender: UIButton) {
+        let didAddTask = timer.toggle(tasks[selectedTask])
+        if didAddTask {
+            sender.setTitle("Pause", forState: .Normal)
+        } else {
+            sender.setTitle("Play", forState: .Normal)
+        }
+    }
     
     
     // Mark: - Table View Data Source

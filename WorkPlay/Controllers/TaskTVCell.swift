@@ -17,18 +17,21 @@ class TaskTVCell: UITableViewCell {
     }
     
     @IBOutlet weak var taskClock: UIButton!
-    
+    @IBOutlet weak var pauseTimerButton: UIButton!
     
     func updateUI() {
         taskClock.setAttributedTitle(nil, forState: .Normal)
         
         // Load information about task
         if let task = self.task {
-        switch task.taskMode {
+            switch task.taskMode {
             case .work:
                 taskClock.setTitle(task.records.currentWork.toTimeString(), forState: .Normal)
+                pauseTimerButton.hidden = true
             case .play:
-                taskClock.setTitle(task.records.currentPlay.toTimeString(), forState: .Normal)
+                let play = task.records.currentPlay
+                taskClock.setTitle(play.toTimeString(), forState: .Normal)
+                pauseTimerButton.hidden = play > 0 ? false : true                
             case .standby, .feedback:
                 break
             }

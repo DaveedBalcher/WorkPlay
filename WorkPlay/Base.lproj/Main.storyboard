@@ -47,10 +47,19 @@
                                                                 <action selector="workButtonAction:" destination="vhb-NG-4H6" eventType="touchUpInside" id="9zM-st-JVm"/>
                                                             </connections>
                                                         </button>
+                                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvr-UH-m9U">
+                                                            <rect key="frame" x="8" y="10" width="42" height="30"/>
+                                                            <state key="normal" title="Pause"/>
+                                                            <connections>
+                                                                <action selector="pausePlayTime:" destination="vhb-NG-4H6" eventType="touchUpInside" id="L2S-Cp-odG"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="gvr-UH-m9U" firstAttribute="leading" secondItem="K2U-0D-Pxp" secondAttribute="leadingMargin" id="GYY-Gm-has"/>
                                                         <constraint firstItem="2rS-Qa-N1w" firstAttribute="centerX" secondItem="K2U-0D-Pxp" secondAttribute="centerX" id="SIh-v4-tgB"/>
+                                                        <constraint firstItem="gvr-UH-m9U" firstAttribute="centerY" secondItem="2rS-Qa-N1w" secondAttribute="centerY" id="kz4-qu-Ubz"/>
                                                         <constraint firstItem="2rS-Qa-N1w" firstAttribute="centerY" secondItem="K2U-0D-Pxp" secondAttribute="centerY" id="odq-TN-fmM"/>
                                                     </constraints>
                                                 </view>
@@ -74,6 +83,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="pauseTimerButton" destination="gvr-UH-m9U" id="JyA-Ar-elG"/>
                                     <outlet property="taskClock" destination="zyg-es-dDP" id="GiH-OU-6cl"/>
                                 </connections>
                             </tableViewCell>

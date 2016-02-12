@@ -53,12 +53,12 @@
 		43BF5F031C69A24700297141 /* WorkPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BF5F071C69A24700297141 /* WorkPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPlayUITests.swift; sourceTree = "<group>"; };
 		43BF5F091C69A24700297141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43BF5F151C69AB6B00297141 /* MainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTVC.swift; path = ../MainTVC.swift; sourceTree = "<group>"; };
-		43BF5F171C69AC7400297141 /* TaskTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTVCell.swift; path = ../TaskTVCell.swift; sourceTree = "<group>"; };
+		43BF5F151C69AB6B00297141 /* MainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTVC.swift; path = Controllers/MainTVC.swift; sourceTree = "<group>"; };
+		43BF5F171C69AC7400297141 /* TaskTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTVCell.swift; path = Controllers/TaskTVCell.swift; sourceTree = "<group>"; };
 		43BF5F191C69AF5E00297141 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		43BF5F1B1C69BDB100297141 /* GlobalClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalClock.swift; sourceTree = "<group>"; };
-		43D6875F1C6AEE3D000E8139 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
-		43EA66EF1C6E31B700E31707 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		43BF5F1B1C69BDB100297141 /* GlobalClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalClock.swift; path = Models/GlobalClock.swift; sourceTree = "<group>"; };
+		43D6875F1C6AEE3D000E8139 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Records.swift; path = Models/Records.swift; sourceTree = "<group>"; };
+		43EA66EF1C6E31B700E31707 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Models/Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
