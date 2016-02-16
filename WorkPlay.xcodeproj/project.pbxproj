@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43007FD11C7288C300840D82 /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43007FD01C7288C300840D82 /* BarGraphView.swift */; };
 		43BF5EE51C69A24700297141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5EE41C69A24700297141 /* AppDelegate.swift */; };
 		43BF5EEA1C69A24700297141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BF5EE81C69A24700297141 /* Main.storyboard */; };
 		43BF5EED1C69A24700297141 /* WorkPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5EEB1C69A24700297141 /* WorkPlay.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43007FD01C7288C300840D82 /* BarGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
 		43BF5EE11C69A24700297141 /* WorkPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BF5EE41C69A24700297141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BF5EE91C69A24700297141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				43BF5F151C69AB6B00297141 /* MainTVC.swift */,
 				43BF5F171C69AC7400297141 /* TaskTVCell.swift */,
+				43007FD01C7288C300840D82 /* BarGraphView.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				TargetAttributes = {
 					43BF5EE01C69A24700297141 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = L4NZ727S2F;
 					};
 					43BF5EF71C69A24700297141 = {
 						CreatedOnToolsVersion = 7.2;
@@ -299,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43EA66F01C6E31B700E31707 /* Task.swift in Sources */,
+				43007FD11C7288C300840D82 /* BarGraphView.swift in Sources */,
 				43BF5F1A1C69AF5E00297141 /* Extensions.swift in Sources */,
 				43D687601C6AEE3D000E8139 /* Records.swift in Sources */,
 				43BF5F1C1C69BDB100297141 /* GlobalClock.swift in Sources */,
@@ -447,10 +452,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WorkPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XpressiveInstruments.WorkPlay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XpressiveInstruments.WorkPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -459,10 +465,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WorkPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XpressiveInstruments.WorkPlay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XpressiveInstruments.WorkPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

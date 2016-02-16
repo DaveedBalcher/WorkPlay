@@ -22,6 +22,7 @@ struct Records {
             }
         }
     }
+    
     private var currentPlayDouble = 0.0
     var currentPlay: Int = 0 {
         didSet {
@@ -34,12 +35,17 @@ struct Records {
         }
     }
     
+    var dailyTotalWork: Int {
+        return currentWork + workSessions.reduce(0, combine: +)
+    }
+    
     var workSessions: [Int] = []
     var playSessions: [Int] = []
     
     var playToWorkRatio: productivityRatio = .somewhatProductive {
         didSet {
             currentPlayDouble += Double(currentWork) * (playToWorkRatio.rawValue - oldValue.rawValue)
+            currentPlay++
         }
     }
     

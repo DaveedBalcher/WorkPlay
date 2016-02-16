@@ -16,25 +16,27 @@ class TaskTVCell: UITableViewCell {
         }
     }
     
-    @IBOutlet weak var taskClock: UIButton!
+    @IBOutlet weak var taskClock: UILabel!
     @IBOutlet weak var pauseTimerButton: UIButton!
+    @IBOutlet weak var barGraphView: BarGraphView!
     
     func updateUI() {
-        taskClock.setAttributedTitle(nil, forState: .Normal)
         
         // Load information about task
         if let task = self.task {
             switch task.taskMode {
             case .work:
-                taskClock.setTitle(task.records.currentWork.toTimeString(), forState: .Normal)
+                taskClock.text = task.records.currentWork.toTimeString()
                 pauseTimerButton.hidden = true
             case .play:
                 let play = task.records.currentPlay
-                taskClock.setTitle(play.toTimeString(), forState: .Normal)
+                taskClock.text = play.toTimeString()
                 pauseTimerButton.hidden = play > 0 ? false : true                
             case .standby, .feedback:
                 break
             }
+            barGraphView.workTotal = task.records.dailyTotalWork
+            barGraphView.currentPlay = task.records.currentPlay
         }
     }
 }
