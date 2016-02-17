@@ -37,12 +37,10 @@ class Task: NSObject {
             break
         case .work:
             records.currentWork = 0
-            //            pauseButton.hidden = true
             timer.enable(self)
         case .feedback:
             break
         case .play:
-            //            pauseButton.hidden = false
             taskMode = sender.toggleMode()
         }
     }

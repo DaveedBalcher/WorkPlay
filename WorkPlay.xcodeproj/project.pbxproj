@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		43007FD11C7288C300840D82 /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43007FD01C7288C300840D82 /* BarGraphView.swift */; };
+		43B212B71C73D6DE00555321 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B212B61C73D6DE00555321 /* MainViewController.swift */; };
+		43B212B91C73D70500555321 /* TaskListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B212B81C73D70500555321 /* TaskListTableView.swift */; };
 		43BF5EE51C69A24700297141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5EE41C69A24700297141 /* AppDelegate.swift */; };
 		43BF5EEA1C69A24700297141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BF5EE81C69A24700297141 /* Main.storyboard */; };
 		43BF5EED1C69A24700297141 /* WorkPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5EEB1C69A24700297141 /* WorkPlay.xcdatamodeld */; };
@@ -15,8 +17,7 @@
 		43BF5EF21C69A24700297141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BF5EF01C69A24700297141 /* LaunchScreen.storyboard */; };
 		43BF5EFD1C69A24700297141 /* WorkPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5EFC1C69A24700297141 /* WorkPlayTests.swift */; };
 		43BF5F081C69A24700297141 /* WorkPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5F071C69A24700297141 /* WorkPlayUITests.swift */; };
-		43BF5F161C69AB6B00297141 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5F151C69AB6B00297141 /* MainTVC.swift */; };
-		43BF5F181C69AC7400297141 /* TaskTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5F171C69AC7400297141 /* TaskTVCell.swift */; };
+		43BF5F181C69AC7400297141 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5F171C69AC7400297141 /* TaskViewController.swift */; };
 		43BF5F1A1C69AF5E00297141 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5F191C69AF5E00297141 /* Extensions.swift */; };
 		43BF5F1C1C69BDB100297141 /* GlobalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5F1B1C69BDB100297141 /* GlobalClock.swift */; };
 		43D687601C6AEE3D000E8139 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6875F1C6AEE3D000E8139 /* Records.swift */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		43007FD01C7288C300840D82 /* BarGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
+		43B212B61C73D6DE00555321 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		43B212B81C73D70500555321 /* TaskListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListTableView.swift; sourceTree = "<group>"; };
 		43BF5EE11C69A24700297141 /* WorkPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BF5EE41C69A24700297141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BF5EE91C69A24700297141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,8 +58,7 @@
 		43BF5F031C69A24700297141 /* WorkPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BF5F071C69A24700297141 /* WorkPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPlayUITests.swift; sourceTree = "<group>"; };
 		43BF5F091C69A24700297141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43BF5F151C69AB6B00297141 /* MainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTVC.swift; path = Controllers/MainTVC.swift; sourceTree = "<group>"; };
-		43BF5F171C69AC7400297141 /* TaskTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTVCell.swift; path = Controllers/TaskTVCell.swift; sourceTree = "<group>"; };
+		43BF5F171C69AC7400297141 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskViewController.swift; path = Controllers/TaskViewController.swift; sourceTree = "<group>"; };
 		43BF5F191C69AF5E00297141 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		43BF5F1B1C69BDB100297141 /* GlobalClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalClock.swift; path = Models/GlobalClock.swift; sourceTree = "<group>"; };
 		43D6875F1C6AEE3D000E8139 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Records.swift; path = Models/Records.swift; sourceTree = "<group>"; };
@@ -142,8 +144,9 @@
 		43D6875C1C6AEDDE000E8139 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				43BF5F151C69AB6B00297141 /* MainTVC.swift */,
-				43BF5F171C69AC7400297141 /* TaskTVCell.swift */,
+				43B212B61C73D6DE00555321 /* MainViewController.swift */,
+				43BF5F171C69AC7400297141 /* TaskViewController.swift */,
+				43B212B81C73D70500555321 /* TaskListTableView.swift */,
 				43007FD01C7288C300840D82 /* BarGraphView.swift */,
 			);
 			name = Controllers;
@@ -307,10 +310,11 @@
 				43BF5F1A1C69AF5E00297141 /* Extensions.swift in Sources */,
 				43D687601C6AEE3D000E8139 /* Records.swift in Sources */,
 				43BF5F1C1C69BDB100297141 /* GlobalClock.swift in Sources */,
-				43BF5F181C69AC7400297141 /* TaskTVCell.swift in Sources */,
+				43BF5F181C69AC7400297141 /* TaskViewController.swift in Sources */,
+				43B212B91C73D70500555321 /* TaskListTableView.swift in Sources */,
 				43BF5EE51C69A24700297141 /* AppDelegate.swift in Sources */,
-				43BF5F161C69AB6B00297141 /* MainTVC.swift in Sources */,
 				43BF5EED1C69A24700297141 /* WorkPlay.xcdatamodeld in Sources */,
+				43B212B71C73D6DE00555321 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
