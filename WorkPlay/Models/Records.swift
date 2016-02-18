@@ -6,6 +6,11 @@
 //  Copyright © 2016 DavidBalcher. All rights reserved.
 //
 
+
+/*
+    Record the users work and play time for a current session and entire work calender.
+*/
+
 import Foundation
 
 struct Records {
@@ -36,7 +41,7 @@ struct Records {
 
     
     // Daily work goal in hours
-    var dailyWorkGoal: Int =  12
+    var dailyWorkGoal: Int = 12
     
     var dailyTotalWork: Int {
         return currentWork + workSessions.reduce(0, combine: +)

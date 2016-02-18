@@ -21,12 +21,12 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oWh-OQ-kZG">
                                 <rect key="frame" x="8" y="288" width="359" height="371"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="371" id="Hse-2h-sCx"/>
-                                </constraints>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wj-Bo-wvf">
                                 <rect key="frame" x="8" y="72" width="359" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="x0o-Ws-Ygq"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="fJ8-pM-RAr" kind="embed" id="UGN-tw-UyT"/>
                                 </connections>
@@ -79,6 +79,10 @@
         <scene sceneID="aBU-0b-0Df">
             <objects>
                 <viewController id="fJ8-pM-RAr" customClass="TaskViewController" customModule="WorkPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nOg-XE-AgM"/>
+                        <viewControllerLayoutGuide type="bottom" id="q7N-zN-2gJ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8vR-Zf-mOg">
                         <rect key="frame" x="0.0" y="0.0" width="359" height="208"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,38 +90,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBV-Er-Xfk">
                                 <rect key="frame" x="0.0" y="0.0" width="359" height="208"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-b0-GKn">
-                                        <rect key="frame" x="0.0" y="159" width="359" height="49"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ak-Z8-ecX" customClass="TaskButton" customModule="WorkPlay" customModuleProvider="target">
-                                                <rect key="frame" x="130" y="4" width="100" height="41"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="wWR-bH-2ty"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                                <state key="normal" title="WORK"/>
-                                                <connections>
-                                                    <action selector="workButtonAction:" destination="Np5-nH-90R" eventType="touchUpInside" id="hAl-rm-rOM"/>
-                                                    <action selector="workButtonAction:" destination="fJ8-pM-RAr" eventType="touchUpInside" id="xNk-Dh-1Yg"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klm-LJ-NTv">
-                                                <rect key="frame" x="8" y="10" width="42" height="30"/>
-                                                <state key="normal" title="Pause"/>
-                                                <connections>
-                                                    <action selector="pausePlayTime" destination="fJ8-pM-RAr" eventType="touchUpInside" id="EPt-Sg-QpC"/>
-                                                    <action selector="pausePlayTime:" destination="Np5-nH-90R" eventType="touchUpInside" id="dGm-1G-leI"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="klm-LJ-NTv" firstAttribute="centerY" secondItem="pWZ-b0-GKn" secondAttribute="centerY" id="ExQ-4H-K8h"/>
-                                            <constraint firstItem="0ak-Z8-ecX" firstAttribute="centerY" secondItem="pWZ-b0-GKn" secondAttribute="centerY" id="OUf-H2-o4a"/>
-                                            <constraint firstItem="klm-LJ-NTv" firstAttribute="leading" secondItem="pWZ-b0-GKn" secondAttribute="leadingMargin" id="UeB-Zl-fmN"/>
-                                            <constraint firstItem="0ak-Z8-ecX" firstAttribute="centerX" secondItem="pWZ-b0-GKn" secondAttribute="centerX" id="ugr-2D-7Bs"/>
-                                        </constraints>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3x-Al-O8q">
                                         <rect key="frame" x="66" y="14" width="229" height="65"/>
                                         <constraints>
@@ -150,6 +122,39 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-b0-GKn">
+                                        <rect key="frame" x="0.0" y="159" width="359" height="49"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ak-Z8-ecX" customClass="TaskButton" customModule="WorkPlay" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="4" width="100" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="wWR-bH-2ty"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                <state key="normal" title="WORK"/>
+                                                <connections>
+                                                    <action selector="workButtonAction:" destination="Np5-nH-90R" eventType="touchUpInside" id="hAl-rm-rOM"/>
+                                                    <action selector="workButtonAction:" destination="fJ8-pM-RAr" eventType="touchUpInside" id="xNk-Dh-1Yg"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klm-LJ-NTv">
+                                                <rect key="frame" x="8" y="10" width="42" height="30"/>
+                                                <state key="normal" title="Pause"/>
+                                                <connections>
+                                                    <action selector="pausePlayTime" destination="fJ8-pM-RAr" eventType="touchUpInside" id="EPt-Sg-QpC"/>
+                                                    <action selector="pausePlayTime:" destination="Np5-nH-90R" eventType="touchUpInside" id="dGm-1G-leI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="klm-LJ-NTv" firstAttribute="centerY" secondItem="pWZ-b0-GKn" secondAttribute="centerY" id="ExQ-4H-K8h"/>
+                                            <constraint firstItem="0ak-Z8-ecX" firstAttribute="centerY" secondItem="pWZ-b0-GKn" secondAttribute="centerY" id="OUf-H2-o4a"/>
+                                            <constraint firstItem="klm-LJ-NTv" firstAttribute="leading" secondItem="pWZ-b0-GKn" secondAttribute="leadingMargin" id="UeB-Zl-fmN"/>
+                                            <constraint firstAttribute="height" constant="49" id="teL-nL-XOX"/>
+                                            <constraint firstItem="0ak-Z8-ecX" firstAttribute="centerX" secondItem="pWZ-b0-GKn" secondAttribute="centerX" id="ugr-2D-7Bs"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>

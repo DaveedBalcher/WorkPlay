@@ -6,6 +6,10 @@
 //  Copyright © 2016 DavidBalcher. All rights reserved.
 //
 
+/*
+    A Global Clock set to trigger every second can be shared to sync different classes
+*/
+
 import UIKit
 
 protocol GlobalClockDelegate {
@@ -16,9 +20,12 @@ class GlobalClock: NSObject {
 
     static let sharedTimer = GlobalClock()
     
-    private var clockRunning = false
+    var clockRunning = false
     
     private var timer: NSTimer!
+    
+    
+    // Instances of the Task class are appended and removed from activeTasks. Active Tasks are sent a signal trigger by a timer. If no tasks are active, the timer invalidates.
     
     var activeTasks: [Task] = [] {
         didSet {
@@ -39,9 +46,10 @@ class GlobalClock: NSObject {
         }
     }
 
-    /*
-        Returns true if did add task and false for did remove task
-    */
+    
+    // Toggle been active and inactive for specified task.
+    // Returns true if did add task and false for did remove task.
+    
     func toggle(currentTask: Task) -> Bool {
         if activeTasks.contains(currentTask) {
             for (index, task) in activeTasks.enumerate() {
@@ -55,6 +63,10 @@ class GlobalClock: NSObject {
             return true
         }
     }
+    
+    
+    
+    // Trigger each active task when timer ticks
     
     var delegate: GlobalClockDelegate?
     
@@ -78,5 +90,26 @@ class GlobalClock: NSObject {
         }
     }
     
+    
+    // Add sleep time to each active task when device returns from background
+    
+    func step(timeInterval: Int) {
+        for (index, task) in activeTasks.enumerate() {
+            switch task.taskMode {
+            case .work:
+                task.records.currentWork += timeInterval
+            case .play:
+                previousPlay = task.records.currentPlay
+                task.records.currentPlay -= timeInterval
+                if task.records.currentPlay <= 0 && previousPlay == 0 {
+                    task.taskMode = .standby
+                    activeTasks.removeAtIndex(index)
+                }
+            case .standby, .feedback:
+                break
+            }
+            delegate?.clockTick()
+        }
+    }
     
 }

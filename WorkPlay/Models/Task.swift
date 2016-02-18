@@ -6,6 +6,10 @@
 //  Copyright © 2016 DavidBalcher. All rights reserved.
 //
 
+/*
+    This class holds the state the task and triggers the next state when the work/play button is tapped.
+*/
+
 import Foundation
 
 
